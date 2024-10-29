@@ -1,0 +1,9 @@
+/* .wrapper{
+
+} */
+
+.containerItensNav{
+    display: flex;
+    gap: 15px;
+
+}
