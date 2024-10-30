@@ -1,9 +1,20 @@
 /* .wrapper{
 
 } */
-
+.cabecalho{
+    display: flex;
+}
 .containerItensNav{
     display: flex;
     gap: 15px;
-
+    list-style: none;
+}
+.menuNavegacao{
+    display: flex;
+    align-items: center;
+}
+.chamativo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
