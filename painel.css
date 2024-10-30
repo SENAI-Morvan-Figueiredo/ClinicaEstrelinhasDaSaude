@@ -1,0 +1,136 @@
+/* Roboto FONT */
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+/* END Roboto FONT */
+
+html, body {
+    background-color: #F5F6FA;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 29vh;
+}
+
+.container2 {
+    display: flex;
+    width: 70vh;
+}
+
+.menusLaterais {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLateral{
+    display: flex;
+    text-align: left;
+    background-color: #FFF;
+    height: 29vh;
+    width: 200px;
+    margin-right: 1vh;
+    margin-bottom: 1vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuLateral2{
+    display: flex;
+    text-align: left;
+    background-color: #FFF;
+    height: 70vh;
+    width: 200px;
+    margin-right: 5px;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #FFF;
+    height: 100px;
+    width: 100%;
+}
+
+#menuLateralAncoras {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+    
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
