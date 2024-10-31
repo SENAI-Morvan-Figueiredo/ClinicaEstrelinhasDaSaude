@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf8e8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1920px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #f5a623;
+}
+
+header h2 {
+    font-size: 28px;
+    color: #f5a623;
+}
+
+.logo {
+    font-weight: bold;
+    color: #f5a623;
+    font-size: 32px;
+}
+
+.Pediatras {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.Pediatra {
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.Pediatra img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.Pediatra h3 {
+    font-size: 22px;
+    color: #f5a623;
+    margin: 10px 0;
+}
+
+.Pediatra p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
