@@ -20,6 +20,7 @@ header {
 header h1 {
     font-size: 36px;
     color: #f5a623;
+    text-align:left;
 }
 
 header h2 {
