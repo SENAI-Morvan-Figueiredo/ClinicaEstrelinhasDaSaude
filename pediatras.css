@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #faf8e8;
+    background-color: #FFFFBC;
     color: #333;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ header h2 {
 .Pediatras {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 140px;
     flex-wrap: wrap;
 }
 
@@ -61,7 +61,9 @@ header h2 {
 }
 
 .Pediatra p {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: #666;
+    color: #FFBD56;
     margin: 10px 0;
+    text-align: justify;
 }
