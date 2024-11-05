@@ -52,7 +52,8 @@ body{
 }
 .chamativo{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 42% 58%;
+    margin-top: 10%;
 }
 .textoInicio{
     display: ruby;
@@ -63,14 +64,37 @@ body{
     font-weight: bold;
     text-align: center;
     margin-block: 15px;
-    font-size: 30px;
+    font-size: 40px;
 }
 .textoInicio p{
-    width: 70%;
+    width: 80%;
     color: #fec827;
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .imagemInicio {
     text-align: right;
+}
+.imagemInicio img{
+    width: 100%;
+    
+}
+.botoesInicio{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#buttonInicio{
+    height: 45px;
+    width: 100%;
+    background-color: #fea92d;
+    border: none;
+    border-radius: 25px;
+    color: #fcf4c2;
+    font-weight: bold;
+    font-size: 18px;
 }
