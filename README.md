@@ -3,11 +3,11 @@ Repositorio do grupo Crânios
 
 estilo cabecalho 
 
-<div class="logo">
-    <img src="./img/logo.png" alt="">
-</div>
+----  <div class="logo">
+----      <img src="./img/logo.png" alt="">
+----  </div>
 
-<hr class="linhaCabecalho">
+----  <hr class="linhaCabecalho">
 
 css
 .linhaCabecalho{
