@@ -16,3 +16,10 @@ css
     margin-block: 5px 35px;
     border: none;
 }
+
+.logo{
+    height: 60%;
+}
+.logo img{
+    height: 65px;
+}
