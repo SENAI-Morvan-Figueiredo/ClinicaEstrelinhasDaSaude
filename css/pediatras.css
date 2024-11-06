@@ -28,11 +28,21 @@ header h2 {
     color: #f5a623;
 }
 
-.logo {
-    font-weight: bold;
-    color: #f5a623;
-    font-size: 32px;
+.linhaCabecalho {
+    height: 2px;
+    background: #ffa50036;
+    margin-block: 5px 35px;
+    border: none;
 }
+
+.logo {
+    height: 60%;
+    text-align: left;
+ }
+
+ .logo img {
+    height: 65px;
+ }
 
 .Pediatras {
     display: flex;
