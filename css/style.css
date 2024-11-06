@@ -19,8 +19,7 @@ body{
     height: 60%;
 }
 .logo img{
-    height: 50px;
-    object-fit: cover;
+    height: 65px;
 }
 .cabecalho{
     display: grid;
@@ -29,7 +28,7 @@ body{
 .linhaCabecalho{
     height: 2px;
     background: #ffa50036;
-    margin-block: 5px 35px;
+    margin-block: 5px 3%;
     border: none;
 }
 .containerItensNav{
@@ -85,9 +84,8 @@ body{
     grid-template-columns: 30% 30%;
     gap: 20px;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
-
 #buttonInicio{
     height: 45px;
     width: 100%;
