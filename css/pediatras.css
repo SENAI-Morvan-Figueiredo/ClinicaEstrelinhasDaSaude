@@ -1,31 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FAFAD2;
+    background-color: #fcf4c2;
     color: #EAB308;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    max-width: 1920px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-header {
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-size: 36px;
-    color: #f5a623;
-    text-align:left;
-}
-
-header h2 {
-    font-size: 42px;
-    color: #f5a623;
 }
 
 .linhaCabecalho {
@@ -35,14 +13,30 @@ header h2 {
     border: none;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+
 .logo {
     height: 60%;
-    text-align: left;
  }
 
  .logo img {
     height: 65px;
  }
+ 
+h2 {
+    font-size: 27px;
+    color: #f5a623;
+}
 
 .Pediatras {
     display: flex;
@@ -59,21 +53,21 @@ header h2 {
 }
 
 .Pediatra img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
 .Pediatra h3 {
-    font-size: 22px;
+    font-size: 18px;
     color: #f5a623;
     margin: 10px 0;
 }
 
 .Pediatra p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFBD56;
     margin: 10px 0;
     text-align: justify;
