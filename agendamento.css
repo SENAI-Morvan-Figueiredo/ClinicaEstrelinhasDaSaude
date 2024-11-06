@@ -6,6 +6,13 @@ body {
     padding: 0;
 }
 
+.linhaCabecalho{
+    height: 2px;
+    background: #ffa50036;
+    margin-block: 5px 35px;
+    border: none;
+}
+
 .container {
     max-width: 1920px;
     margin: auto;
@@ -23,12 +30,14 @@ header h1 {
     color: #f5a623;
     text-align: left;
 }
+ .logo {
+    height: 60%;
+    text-align: left;
+ }
 
-.logo {
-    font-weight: bold;
-    color: #f5a623;
-    font-size: 32px;
-}
+ .logo img {
+    height: 65px;
+ }
 
 .paciente h2, .responsavel h2 {
     font-size: 42px;

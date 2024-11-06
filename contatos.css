@@ -24,11 +24,21 @@ header h1 {
     text-align: left;
 }
 
-.logo {
-    font-weight: bold;
-    color: #f5a623;
-    font-size: 32px;
+.linhaCabecalho {
+    height: 2px;
+    background: #ffa50036;
+    margin-block: 5px 35px;
+    border: none;
 }
+
+.logo {
+    height: 60%;
+    text-align: left;
+ }
+
+ .logo img {
+    height: 65px;
+ }
 
 .contact-form h2 {
     font-size: 40px;
