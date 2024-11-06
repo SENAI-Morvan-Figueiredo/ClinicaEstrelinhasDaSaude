@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador Inicio</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="painel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +19,17 @@
                 </div>
                 <div class="">
                     <ul class="menuLateralAncoras">
-                        <li id="inicio"><a  class="menuLateralAncoras" href="#Inicio">Inicio</a></li>
-                        <li id="usuarios"><a  class="menuLateralAncoras" href="#Usuários">Usuários</a></li>
-                        <li id="agenda"><a  class="menuLateralAncoras" href="#Agenda">Agenda</a></li>
+                        <li id="inicio"><a  class="menuLateralAncoras" href="painel.html">Inicio</a></li>
+                        <li id="usuarios"><a  class="menuLateralAncoras" href="usuarios.html">Usuários</a></li>
+                        <li id="agenda"><a  class="menuLateralAncoras" href="agenda.html">Agenda</a></li>
                     </ul>
                 </div>
             </div>
             <div class="menuLateral2">
                 <div class="">
                     <ul class="menuLateralAncoras">
-                        <li id="configuracoes"><a  class="menuLateralAncoras" href="#Configurações">Configurações</a></li>
-                        <li id="desconectar"><a  class="menuLateralAncoras" href="#Desconectar">Desconectar</a></li>
+                        <li id="configuracoes"><a  class="menuLateralAncoras" href="settings.html">Configurações</a></li>
+                        <li id="desconectar"><a  class="menuLateralAncoras" href="login.html">Desconectar</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,7 +37,17 @@
         <div class="conteudoPrincipal">
             <div class="menuHeader">
                 <input type="search" name="searchbox" id="searchbox" placeholder="Procurar" height="47px">
-                <a id="profilepic" href="#profile"><img src="assets\avatar.png" alt="" srcset="" width="50px" style="border-radius: 50%;"></a>
+                <div class="profile-dropdown">
+                    <div class="profile-trigger">
+                        <img src="assets\avatar.png" alt="Foto Perfil" class="profile-img">
+                        <!-- <span class="profile-name roboto-regular">Nome do Usuário</span> -->
+                    </div>
+                    <div class="dropdown-content roboto-light">
+                        <a href="#">Meu Perfil</a>
+                        <a href="settings.html">Configurações</a>
+                        <a href="login.html">Desconectar</a>
+                    </div>
+                </div>
             </div>
             <div class="container2">
                 <h1 class="roboto-regular">Olá, Administrador!</h1>

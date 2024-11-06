@@ -143,18 +143,6 @@ html, body {
   padding-inline: 2%;
 }
 
-#searchbox::before {
-  content: '';
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-image: url("assets/icon_search.png");
-  background-size: contain;
-}
-
 .menuLateralAncoras{
     text-decoration: none;
     list-style-type: none;
@@ -217,19 +205,88 @@ li::before {
   margin: 0vh 0vh 0vh 2vh;
 }
 
-#profilepic {
+/* menu dropdown canto superior direito */
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
   margin-right: 6%;
-  display: grid;
 }
 
-#profilepic::before {
-  content: '';
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px; /* Largura do ícone */
-  height: 20px; /* Altura do ícone */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url('assets/dropdown_arrow.png');
+.profile-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px 35px 8px 10px;
+  position: relative;
 }
+
+.profile-trigger::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Rotação da seta quando aberto */
+.profile-dropdown:hover .profile-trigger::before {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+/* Exibição do menu ao hover */
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+/* FIM menu dropdown canto superior direito */
+
+li {
+  background-image: linear-gradient(
+    to right,
+    #0000F5,
+    #0000F5 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s ease-in-out;
+}
+
+li:hover {
+  background-position: 0;
+ }
