@@ -53,7 +53,7 @@ body{
 .chamativo{
     display: grid;
     grid-template-columns: 42% 58%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .textoInicio{
     display: ruby;
@@ -87,7 +87,6 @@ body{
     justify-content: center;
     margin-top: 5%;
 }
-
 #buttonInicio{
     height: 45px;
     width: 100%;
