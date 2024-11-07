@@ -202,7 +202,8 @@ li::before {
   display: flex;
   width: 97%;
   height: 100vh;
-  margin: 0vh 0vh 0vh 2vh;
+  margin: 0vh 2vh 0vh 2vh;
+  flex-direction: column;
 }
 
 /* menu dropdown canto superior direito */
