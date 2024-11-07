@@ -307,7 +307,7 @@ li:hover {
 .dados-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 30px;
 }
   
 .input-box {
