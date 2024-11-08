@@ -16,23 +16,25 @@
         </a>
     </div>
     <hr class="linhaCabecalho">
+    <div class="containerPaciente">
+        <div class="menu">
+            <p class="menu-title" onclick="toggleMenu()">MENU ☰</p>
+            <nav id="menu-items">
+                <ul>
+                    <li><a href="paciente.html">Pacientes</a></li>
+                    <li><a href="medicoagenda.html">Agenda</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <!-- Menu Lateral -->
-    <aside class="menu">
-        <p class="menu-title" onclick="toggleMenu()">MENU ☰</p>
-        <nav id="menu-items">
-            <ul>
-                <li><a href="paciente.html">Pacientes</a></li>
-                <li><a href="medicoagenda.html">Agenda</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <!-- Conteúdo Principal -->
-    <div class="content">
-        <!-- Informações do Paciente e Seções -->
+        <div class="content">
+            <div class="search-icon">
+                <a href="medicopaciente.html">
+                <span class="icon">&#128269;</span>
+                </a>
+            </div>            
+            <h1>"Nome do paciente"</h1>
         <div class="main-info-sections">
-            <!-- Informações do Paciente -->
             <div class="patient-info">
                 <div>
                     <label for="peso">Peso</label>
@@ -56,45 +58,40 @@
                 </div>
             </div>
 
-            <!-- Seções Expansíveis -->
             <div class="sections">
-                <!-- Consultas -->
                 <div class="section">
                     Consultas <span>&#x25BC;</span>
                     <div class="section-content">
-                        <p><strong>Consulta com Dr. João</strong> - Realizada em 01/11/2024. Diagnóstico: Leve infecção respiratória.</p>
-                        <p><strong>Consulta com Dra. Maria</strong> - Realizada em 15/10/2024. Diagnóstico: Check-up anual.</p>
-                        <p><strong>Consulta com Dr. Ricardo</strong> - Realizada em 22/09/2024. Diagnóstico: Hipertensão leve.</p>
+                        <p><strong>-Consulta com Dra. Bianca</strong> - Realizada em 01/11/2024. Diagnóstico: Leve infecção respiratória.</p>
+                        <p><strong>-Consulta com Dra. Marianna</strong> - Realizada em 15/10/2024. Diagnóstico: Check-up anual.</p>
+                        <p><strong>-Consulta com Dra. Bianca</strong> - Realizada em 22/09/2024. Diagnóstico: Hipertensão leve.</p>
                     </div>
                 </div>
 
-                <!-- Exames -->
                 <div class="section">
                     Exames <span>&#x25BC;</span>
                     <div class="section-content">
-                        <p><strong>Exame de sangue</strong> - Realizado em 20/10/2024. Resultados: Todos dentro da normalidade.</p>
-                        <p><strong>Exame de urina</strong> - Realizado em 05/10/2024. Resultados: Leve presença de proteína.</p>
-                        <p><strong>Exame de colesterol</strong> - Realizado em 15/09/2024. Resultados: Colesterol elevado.</p>
+                        <p><strong>-Exame de sangue</strong> - Realizado em 20/10/2024. Resultados: Todos dentro da normalidade.</p>
+                        <p><strong>-Exame de urina</strong> - Realizado em 05/10/2024. Resultados: Leve presença de proteína.</p>
+                        <p><strong>-Exame de colesterol</strong> - Realizado em 15/09/2024. Resultados: Colesterol elevado.</p>
                     </div>
                 </div>
 
-                <!-- Laudos -->
                 <div class="section">
                     Laudos <span>&#x25BC;</span>
                     <div class="section-content">
-                        <p><strong>Laudo de raio-X</strong> - Realizado em 10/09/2024. Resultado: Sem alterações.</p>
-                        <p><strong>Laudo de eletrocardiograma</strong> - Realizado em 12/08/2024. Resultado: Normal.</p>
-                        <p><strong>Laudo de ultrassonografia</strong> - Realizado em 20/07/2024. Resultado: Leve alteração no fígado.</p>
+                        <p><strong>-Laudo de raio-X</strong> - Realizado em 10/09/2024. Resultado: Sem alterações.</p>
+                        <p><strong>-Laudo de eletrocardiograma</strong> - Realizado em 12/08/2024. Resultado: Normal.</p>
+                        <p><strong>-Laudo de ultrassonografia</strong> - Realizado em 20/07/2024. Resultado: Leve alteração no fígado.</p>
                     </div>
                 </div>
 
-                <!-- Vacinas -->
                 <div class="section">
                     Vacinas <span>&#x25BC;</span>
                     <div class="section-content">
-                        <p><strong>Vacina contra gripe</strong> - Administrada em 01/11/2024.</p>
-                        <p><strong>Vacina de hepatite B</strong> - Administrada em 01/06/2024.</p>
-                        <p><strong>Vacina de febre amarela</strong> - Administrada em 10/03/2024.</p>
+                        <p><strong>-Vacina contra gripe</strong> - Administrada em 01/11/2024.</p>
+                        <p><strong>-Vacina de hepatite B</strong> - Administrada em 01/06/2024.</p>
+                        <p><strong>-Vacina de febre amarela</strong> - Administrada em 10/03/2024.</p>
                     </div>
                 </div>
             </div>
@@ -111,7 +108,6 @@
             }
         }
 
-        // Alternar visibilidade das seções
         document.querySelectorAll('.section').forEach((section) => {
             section.addEventListener('click', () => {
                 let content = section.querySelector('.section-content');

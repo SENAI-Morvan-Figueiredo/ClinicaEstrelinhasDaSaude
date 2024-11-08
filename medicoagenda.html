@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Médica</title>
+    <link rel="stylesheet" href="css/medicoagenda.css">
+</head>
+<body>
+    <div class="wrapper">
+        <a href="index.html">
+            <div class="logo">
+                <img src="img/Estrelinhas_da_Saúde__2_-removebg.png" alt="logo">
+            </div>
+        </a>
+    </div>
+    <hr class="linhaCabecalho">
+    <div class="containerAgenda">
+        <aside class="menu">
+            <p class="menu-title" onclick="toggleMenu()">MENU ☰</p>
+            <nav id="menu-items">
+                <ul>
+                    <a href="paciente.html"><li>Pacientes</li></a>
+                    <a href="medicoagenda.html"><li>Agenda</li></a>
+                </ul>
+            </nav>
+        </aside>
+        <div class="Agenda">
+            <div class="header">
+                <h2>AGENDA</h2>
+                <div class="filter">
+                    <button>HOJE</button>
+                    <button>SEMANA</button>
+                </div>
+            </div>
+            <div class="schedule">
+                <div class="appointment">
+                    <span class="time">09:10</span>
+                    <span class="name">Alice Silva</span>
+                    <span class="type">RETORNO</span>
+                    </div>
+                <div class="appointment">
+                    <span class="time">08:30</span>
+                    <span class="name">Carlos Santos</span>
+                    <span class="type">PRIMEIRA CONSULTA</span>
+                </div>
+                <div class="appointment">
+                    <span class="time">08:10</span>
+                    <span class="name">Beatriz Oliveira</span>
+                    <span class="type">RETORNO</span>
+                </div>
+                <div class="appointment">
+                    <span class="time">07:30</span>
+                    <span class="name">Miguel Costa</span>
+                    <span class="type">RETORNO</span>
+                </div>
+                <div class="appointment">
+                    <span class="time">07:10</span>
+                    <span class="name">Larissa Lima</span>
+                    <span class="type">PRIMEIRA CONSULTA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
