@@ -81,3 +81,15 @@ form button {
 form button:hover {
     background-color: #e59400;
 }
+
+.background-star {
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    opacity: 0.3;
+    transform: rotate(-35deg);
+}
+
+.background-star img {
+    width: 400px;
+}
