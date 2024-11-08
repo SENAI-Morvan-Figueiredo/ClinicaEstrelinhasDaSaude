@@ -96,3 +96,31 @@ body{
     font-weight: bold;
     font-size: 18px;
 }
+.formularioLogin{
+    text-align: center;
+
+}
+.imgLogin{
+    margin-block: 2%;
+}
+.imgLogin img{
+    width: 20%;
+}
+#login {
+    width: 30%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fbb03b;
+}
+#pwd{
+    width: 30%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fbb03b;
+}
+.formularioLogin{
+    display: grid;
+    gap: 10px;
+}
