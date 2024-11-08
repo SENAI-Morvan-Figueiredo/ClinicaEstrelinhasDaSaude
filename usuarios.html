@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="painel.css">
+    <link rel="stylesheet" href="usuarios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="menusLaterais">
+            <div class="menuLateral">
+                <div id="logo">
+                    <img src="assets\logo.png" alt="" width="75%">
+                </div>
+                <div class="">
+                    <ul class="menuLateralAncoras">
+                        <li id="inicio"><a  class="menuLateralAncoras" href="painel.html">Inicio</a></li>
+                        <li id="usuarios"><a  class="menuLateralAncoras" href="usuarios.html">Usuários</a></li>
+                        <li id="agenda"><a  class="menuLateralAncoras" href="agenda.html">Agenda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menuLateral2">
+                <div class="">
+                    <ul class="menuLateralAncoras">
+                        <li id="configuracoes"><a  class="menuLateralAncoras" href="settings.html">Configurações</a></li>
+                        <li id="desconectar"><a  class="menuLateralAncoras" href="login.html">Desconectar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="conteudoPrincipal">
+            <div class="menuHeader">
+                <input type="search" name="searchbox" id="searchbox" placeholder="Procurar" height="47px">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger">
+                        <img src="assets\avatar.png" alt="Foto Perfil" class="profile-img">
+                        <!-- <span class="profile-name roboto-regular">Nome do Usuário</span> -->
+                    </div>
+                    <div class="dropdown-content roboto-light">
+                        <a href="#">Meu Perfil</a>
+                        <a href="settings.html">Configurações</a>
+                        <a href="login.html">Desconectar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <h1 class="roboto-regular">Usuários:</h1>
+                <div class="botoes">
+                    <div class="opcoes"><a id="cadastrarNovo" class="ancoras100 roboto-thin" href="">Cadastrar <br>Novo Usuário</a></div>
+                    <div class="opcoes"><a id="cadastrados" class="ancoras100 roboto-thin" href="">Usuários<br>Cadastrados</a></div>
+                </div>
+                <div class="conteudo">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

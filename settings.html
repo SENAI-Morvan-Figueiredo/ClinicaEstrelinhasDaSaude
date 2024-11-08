@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="menusLaterais">
+            <div class="menuLateral">
+                <div id="logo">
+                    <img src="assets\logo.png" alt="" width="75%">
+                </div>
+                <div class="">
+                    <ul class="menuLateralAncoras">
+                        <li id="inicio"><a  class="menuLateralAncoras" href="painel.html">Inicio</a></li>
+                        <li id="usuarios"><a  class="menuLateralAncoras" href="usuarios.html">Usuários</a></li>
+                        <li id="agenda"><a  class="menuLateralAncoras" href="agenda.html">Agenda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menuLateral2">
+                <div class="">
+                    <ul class="menuLateralAncoras">
+                        <li id="configuracoes"><a  class="menuLateralAncoras" href="settings.html">Configurações</a></li>
+                        <li id="desconectar"><a  class="menuLateralAncoras" href="login.html">Desconectar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="conteudoPrincipal">
+            <div class="menuHeader">
+                <input type="search" name="searchbox" id="searchbox" placeholder="Procurar" height="47px">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger">
+                        <img src="assets\avatar.png" alt="Foto Perfil" class="profile-img">
+                        <!-- <span class="profile-name roboto-regular">Nome do Usuário</span> -->
+                    </div>
+                    <div class="dropdown-content roboto-light">
+                        <a href="#">Meu Perfil</a>
+                        <a href="settings.html">Configurações</a>
+                        <a href="login.html">Desconectar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container2">
+                <h1 class="roboto-regular">Configurações:</h1>
+                <div class="dados-clinica">
+                    <h2 class="roboto-regular">Dados da clínica:</h2>
+                    <div class="dados-grid roboto-light">
+                        <div class="input-box">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" id="cnpj" value="123.456.0001/123">
+                        </div>
+                        <div class="input-box">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" value="Rua do Oratório, 215 - Mooca">
+                        </div>
+                        <div class="input-box">
+                            <label for="nomeFantasia">Nome Fantasia</label>
+                            <input type="text" id="nomeFantasia" value="Estrelinhas da Saúde">
+                        </div>
+                        <div class="input-box">
+                            <label for="razaoSocial">Razão Social</label>
+                            <input type="text" id="razaoSocial" value="Estrelinhas Clínica S.A.">
+                        </div>
+                        <div class="input-box">
+                            <label for="horario">Horário de Funcionamento</label>
+                            <input type="text" id="horario" value="Seg à Sex das 7 as 18hrs">
+                        </div>
+                        <div class="input-box">
+                            <label for="telefone">Telefone de Contato</label>
+                            <input type="text" id="telefone" value="+55 11 3999-9999">
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="contato@clinicaestrelinhas.com.br">
+                        </div>
+                        <div class="input-box">
+                            <label for="sexo">Sexo</label>
+                            <input type="text" id="sexo" value="Masculino">
+                        </div>
+                    </div>
+                    <button class="save-btn roboto-light">Salvar Configurações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
