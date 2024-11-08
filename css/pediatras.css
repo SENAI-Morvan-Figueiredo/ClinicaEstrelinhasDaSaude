@@ -42,7 +42,7 @@ h2 {
 .Pediatras {
     display: flex;
     justify-content: center;
-    gap: 140px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
