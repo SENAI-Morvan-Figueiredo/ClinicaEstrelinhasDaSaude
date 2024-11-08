@@ -84,3 +84,14 @@ h1{
     position: absolute;
     left: 80%;
   }
+
+  .imagemEquipe, .imagemConsulta {
+    align-items: center;
+    width: 15%;
+    height: 60%;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
