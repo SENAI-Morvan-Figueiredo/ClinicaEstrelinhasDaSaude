@@ -1,8 +1,8 @@
  .botoes {
     display: flex;
-    width: 55%;
-    height: 25%;
-    margin-bottom: 3vh;
+    width: 37%;
+    height: 13%;
+    margin-bottom: 2vh;
   }
   
   .opcoes {
@@ -10,15 +10,8 @@
     height: 100%;
     background-color: #FFF;
     position: relative; /* Importante: adicionar position relative no elemento pai */
-    margin: 0vh 3vh 0vh 0vh;
+    margin: 0vh 2vh 0vh 0vh;
     padding-left: 28px; /* Espaço para o ícone */
-  }
-  
-  .conteudo{
-    display: flex;
-    width: 100%;
-    height: 55%;
-    background-color: #FFF;
   }
 
   .ancoras100 {
@@ -62,3 +55,65 @@
     background-repeat: no-repeat;
     background-image: url('assets/list_paciente.png');
 }
+
+/* INICIO TELA CADASTRAR NOVO USUARIO */
+.conteudo{
+  display: flex;
+  width: 100%;
+  height: 55%;
+  height: 77vh;
+  margin: 0vh 2vh 0vh 0vh;
+  flex-direction: column;
+}
+
+.dados-clinica {
+  background-color: #ffffff;
+  padding: 20px;
+}
+  
+.dados-clinica h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+  
+.dados-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+  
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+  
+.input-box label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+  
+.input-box input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+  
+.save-btn {
+  margin-right: auto;
+  margin-top: 1em;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  
+.save-btn:hover {
+  background-color: #0056b3;
+}
+
+/* FIM TELA CADASTRAR NOVO USUARIO */
