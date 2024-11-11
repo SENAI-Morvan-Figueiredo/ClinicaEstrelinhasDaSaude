@@ -113,13 +113,20 @@ body{
     border-radius: 20px;
     border: none;
     background-color: #fbb03b;
+    text-align: center;
 }
+::placeholder{
+    color: #fced6d;
+}
+
 #pwd{
     width: 30%;
     height: 35px;
     border-radius: 20px;
     border: none;
     background-color: #fbb03b;
+    text-align: center;
+    color: #fced6d;
 }
 .formularioLogin{
     display: grid;
