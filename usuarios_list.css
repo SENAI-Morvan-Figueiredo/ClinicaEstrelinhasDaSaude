@@ -1,0 +1,130 @@
+ .botoes {
+    display: flex;
+    width: 37%;
+    height: 13%;
+    margin-bottom: 2vh;
+  }
+  
+  .opcoes {
+    width: 50%;
+    height: 100%;
+    background-color: #FFF;
+    position: relative; /* Importante: adicionar position relative no elemento pai */
+    margin: 0vh 2vh 0vh 0vh;
+    padding-left: 28px; /* Espaço para o ícone */
+  }
+
+  .ancoras100 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 1.4rem;
+  }
+
+#cadastrarNovo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 10% 0 10%;
+    padding: 0 10% 0 10%;
+    width: 40%;
+    height: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('assets/add_paciente.png');
+}
+
+#cadastrados::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 10% 0 10%;
+    padding: 0 10% 0 10%;
+    width: 40%;
+    height: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('assets/list_paciente.png');
+}
+
+/* INICIO TELA CADASTRAR NOVO USUARIO */
+.conteudo{
+  display: flex;
+  width: 100%;
+  height: 55%;
+  height: 77vh;
+  margin: 0vh 2vh 0vh 0vh;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #fff;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-editar, .btn-excluir {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-editar {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-excluir {
+  background-color: #f44336;
+  color: white;
+}
+
+
+table td, table th {
+  border: none;
+}

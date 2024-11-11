@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="painel.css">
+    <link rel="stylesheet" href="usuarios_list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="menusLaterais">
+            <div class="menuLateral">
+                <div id="logo">
+                    <img src="assets\logo.png" alt="" style="width: 75% !important;">
+                </div>
+                <div class="">
+                    <ul class="menuLateralAncoras">
+                        <li id="inicio"><a  class="menuLateralAncoras" href="painel.html">Inicio</a></li>
+                        <li id="usuarios"><a  class="menuLateralAncoras" href="usuarios.html">Usuários</a></li>
+                        <li id="agenda"><a  class="menuLateralAncoras" href="agenda.html">Agenda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menuLateral2">
+                <div class="">
+                    <ul class="menuLateralAncoras">
+                        <li id="configuracoes"><a  class="menuLateralAncoras" href="settings.html">Configurações</a></li>
+                        <li id="desconectar"><a  class="menuLateralAncoras" href="login.html">Desconectar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="conteudoPrincipal">
+            <div class="menuHeader">
+                <input type="search" name="searchbox" id="searchbox" placeholder="Procurar" height="47px">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger">
+                        <img src="assets\avatar.png" alt="Foto Perfil" class="profile-img">
+                        <!-- <span class="profile-name roboto-regular">Nome do Usuário</span> -->
+                    </div>
+                    <div class="dropdown-content roboto-light">
+                        <a href="#">Meu Perfil</a>
+                        <a href="settings.html">Configurações</a>
+                        <a href="login.html">Desconectar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <h1 class="roboto-regular">Usuários:</h1>
+                <div class="botoes">
+                    <div class="opcoes"><a id="cadastrarNovo" class="ancoras100 roboto-thin" href="usuarios.html">Cadastrar <br>Novo Usuário</a></div>
+                    <div class="opcoes"><a id="cadastrados" class="ancoras100 roboto-thin" href="usuarios_list.html">Usuários<br>Cadastrados</a></div>
+                </div>
+                <div class="conteudo">
+                    <table>
+                        <thead>
+                            <tr class="roboto-thin">
+                                <th>Foto de Perfil</th>
+                                <th>Nome Completo</th>
+                                <th>Email</th>
+                                <th>Telefone</th>
+                                <th>Data de Nascimento</th>
+                                <th>Função</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody class="roboto-light">
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Foto de perfil"></td>
+                                <td>Carlos Eduardo Silva</td>
+                                <td>carlos.silva@email.com</td>
+                                <td>(11) 98765-4321</td>
+                                <td>15/03/1990</td>
+                                <td>Desenvolvedor Full Stack</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Foto de perfil"></td>
+                                <td>Maria Luiza Santos</td>
+                                <td>maria.santos@email.com</td>
+                                <td>(21) 97654-3210</td>
+                                <td>22/07/1988</td>
+                                <td>Designer UX/UI</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Foto de perfil"></td>
+                                <td>João Pedro Oliveira</td>
+                                <td>joao.oliveira@email.com</td>
+                                <td>(31) 96543-2109</td>
+                                <td>10/12/1992</td>
+                                <td>Gerente de Projetos</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Foto de perfil"></td>
+                                <td>Ana Clara Ferreira</td>
+                                <td>ana.ferreira@email.com</td>
+                                <td>(41) 95432-1098</td>
+                                <td>05/09/1995</td>
+                                <td>Analista de Dados</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Foto de perfil"></td>
+                                <td>Lucas Mendes Costa</td>
+                                <td>lucas.costa@email.com</td>
+                                <td>(51) 94321-0987</td>
+                                <td>18/04/1991</td>
+                                <td>Arquiteto de Software</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Foto de perfil"></td>
+                                <td>Beatriz Almeida Lima</td>
+                                <td>beatriz.lima@email.com</td>
+                                <td>(61) 93210-9876</td>
+                                <td>30/11/1993</td>
+                                <td>Product Owner</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Foto de perfil"></td>
+                                <td>Gabriel Santos Pereira</td>
+                                <td>gabriel.pereira@email.com</td>
+                                <td>(71) 92109-8765</td>
+                                <td>25/06/1989</td>
+                                <td>DevOps Engineer</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Foto de perfil"></td>
+                                <td>Isabella Martins</td>
+                                <td>isabella.martins@email.com</td>
+                                <td>(81) 91098-7654</td>
+                                <td>12/08/1994</td>
+                                <td>Scrum Master</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/men/9.jpg" alt="Foto de perfil"></td>
+                                <td>Rafael Rodrigues</td>
+                                <td>rafael.rodrigues@email.com</td>
+                                <td>(91) 90987-6543</td>
+                                <td>08/02/1987</td>
+                                <td>Tech Lead</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Foto de perfil"></td>
+                                <td>Juliana Costa Silva</td>
+                                <td>juliana.silva@email.com</td>
+                                <td>(12) 98876-5432</td>
+                                <td>20/05/1996</td>
+                                <td>QA Engineer</td>
+                                <td class="acoes">
+                                    <button class="btn-editar">Editar</button>
+                                    <button class="btn-excluir">Excluir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
