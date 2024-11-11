@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
     <link rel="stylesheet" href="painel.css">
+    <link rel="stylesheet" href="agenda.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -49,8 +50,79 @@
                     </div>
                 </div>
             </div>
-            <div class="container2">
-                <h1 class="roboto-regular">Agenda:</h1>
+            <div class="container2 roboto-light">
+                <div class="header roboto-regular">
+                    <h1>Agenda de Consultas</h1>
+                    <div class="filtros">
+                        <input type="date" value="2024-11-11">
+                        <select>
+                            <option>Todos os Médicos</option>
+                            <option>Dra. Marianna Rodrigues - Pediatra</option>
+                            <option>Dra. Bianca Seixas Soares - Nutricionista</option>
+                        </select>
+                        <select>
+                            <option>Todas as Especialidades</option>
+                            <option>Clínica Geral</option>
+                            <option>Pediatria</option>
+                            <option>Cardiologia</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="calendario">
+                    <div class="dias-semana">
+                        <div>Horário</div>
+                        <div>Segunda</div>
+                        <div>Terça</div>
+                        <div>Quarta</div>
+                        <div>Quinta</div>
+                        <div>Sexta</div>
+                        <div>Sábado</div>
+                    </div>
+        
+                    <div class="horarios">
+                        <div class="hora">08:00</div>
+                        <div class="consulta">Maria Silva<br>Dr. João<br>Clínico Geral</div>
+                        <div class="consulta urgente">Pedro Santos<br>Dra. Maria<br>Pediatria</div>
+                        <div></div>
+                        <div class="consulta">Ana Oliveira<br>Dr. Carlos<br>Cardiologia</div>
+                        <div></div>
+                        <div class="consulta retorno">João Paulo<br>Dr. João<br>Retorno</div>
+        
+                        <div class="hora">09:00</div>
+                        <div></div>
+                        <div class="consulta">Carlos Eduardo<br>Dr. João<br>Clínico Geral</div>
+                        <div class="consulta retorno">Márcia Lima<br>Dra. Maria<br>Retorno</div>
+                        <div></div>
+                        <div class="consulta urgente">Roberto Silva<br>Dr. Carlos<br>Urgente</div>
+                        <div></div>
+        
+                        <div class="hora">10:00</div>
+                        <div class="consulta">Paulo Souza<br>Dra. Maria<br>Pediatria</div>
+                        <div></div>
+                        <div class="consulta">Fernanda Santos<br>Dr. Carlos<br>Cardiologia</div>
+                        <div class="consulta retorno">Lucas Mendes<br>Dr. João<br>Retorno</div>
+                        <div></div>
+                        <div class="consulta">Beatriz Lima<br>Dra. Maria<br>Pediatria</div>
+        
+                        <!-- Adicione mais horários conforme necessário -->
+                    </div>
+                </div>
+        
+                <div class="legenda">
+                    <div class="legenda-item">
+                        <div class="legenda-cor" style="background: #e3f2fd;"></div>
+                        <span>Consulta Normal</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-cor" style="background: #ffebee;"></div>
+                        <span>Urgência</span>
+                    </div>
+                    <div class="legenda-item">
+                        <div class="legenda-cor" style="background: #e8f5e9;"></div>
+                        <span>Retorno</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
