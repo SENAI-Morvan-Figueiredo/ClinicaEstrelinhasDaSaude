@@ -125,7 +125,7 @@ html, body {
 .menuHeader {
   display: flex;
   background-color: #FFF;
-  height: 17vh;
+  min-height: 17vh;
   width: 100%;
   align-items: center;
   justify-content: space-between;
