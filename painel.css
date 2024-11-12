@@ -291,3 +291,121 @@ li {
 li:hover {
   background-position: 0;
  }
+
+.container2 {
+  padding: 20px;
+  background-color: #f8f9fe;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 83vh;
+}
+
+.welcome {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-info {
+  flex-grow: 1;
+}
+
+.card-title {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-consultas {
+  background-color: #fff5e6;
+  color: #ffa500;
+}
+
+.icon-pacientes {
+  background-color: #e6f3ff;
+  color: #007bff;
+}
+
+.icon-clinicas {
+  background-color: #ffe6e6;
+  color: #ff4444;
+}
+
+.icon-faturamento {
+  background-color: #e6ffe6;
+  color: #00cc00;
+}
+
+.graficos-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  height: calc(100vh - 250px); /* Altura fixa considerando o header e cards */
+  margin-top: 20px;
+  overflow: hidden; /* Previne scroll na grid */
+}
+
+.grafico {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  height: 100%; /* Ocupa toda altura do container pai */
+  overflow: auto; /* Adiciona scroll se necessário */
+}
+
+.grafico-titulo {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilização básica dos gráficos */
+.linha-chart {
+  width: 100%;
+  height: 300px;
+}
+
+.donut-chart {
+  width: 100%;
+  height: 300px;
+}
+
+.linha-chart, .donut-chart {
+  width: 100%;
+  height: 100%; /* Ajusta à altura do container */
+  max-height: 400px; /* Altura máxima para os gráficos */
+}
