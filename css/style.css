@@ -6,58 +6,71 @@
     font-weight: 500;
     font-style: normal;
 }
+
 .wrapper {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
       font-family: "Open Sans", sans-serif;
 }
+
 body{
     background-color: #fcf4c2;
 }
+
 .logo{
     height: 60%;
 }
+
 .logo img{
     height: 65px;
 }
+
 .cabecalho{
     display: grid;
     grid-template-columns: 50% 50%;
 }
+
 .linhaCabecalho{
     height: 2px;
     background: #ffa50036;
     margin-block: 5px 3%;
     border: none;
 }
+
 .containerItensNav{
     display: flex;
     gap: 15px;
     list-style: none;
 }
+
 .containerItensNav a{
     color: orange;
     font-weight: bold;  
 }
+
 .menuNavegacao{
     display: flex;
     align-items: center;    
 }
+
 .imagemUser img{
     height: 40px;
     width: 40px;
     margin-left: 10px;
 }
+
 .chamativo{
     display: grid;
     grid-template-columns: 42% 58%;
     margin-top: 5%;
 }
+
 .textoInicio{
     display: ruby;
     text-align: center;
 }
+
 .textoInicio h1{
     color: orange;
     font-weight: bold;
@@ -65,6 +78,7 @@ body{
     margin-block: 15px;
     font-size: 40px;
 }
+
 .textoInicio p{
     width: 80%;
     color: #fec827;
@@ -72,13 +86,16 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
+
 .imagemInicio {
     text-align: right;
 }
+
 .imagemInicio img{
     width: 100%;
     
 }
+
 .botoesInicio{
     display: grid;
     grid-template-columns: 30% 30%;
@@ -86,6 +103,7 @@ body{
     justify-content: center;
     margin-top: 3%;
 }
+
 #buttonInicio{
     height: 45px;
     width: 100%;
@@ -96,16 +114,20 @@ body{
     font-weight: bold;
     font-size: 18px;
 }
+
 .formularioLogin{
     text-align: center;
 
 }
+
 .imgLogin{
     margin-block: 2%;
 }
+
 .imgLogin img{
     width: 20%;
 }
+
 #login {
     width: 30%;
     height: 35px;
@@ -114,6 +136,19 @@ body{
     background-color: #fbb03b;
     text-align: center;
 }
+
+.background-star {
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    opacity: 0.3;
+    transform: rotate(-35deg);
+}
+
+.background-star img {
+    width: 400px;
+}
+
 ::placeholder{
     color: #fced6d;
 }
@@ -126,14 +161,17 @@ body{
     background-color: #fbb03b;
     text-align: center;
 }
+
 .formularioLogin{
     display: grid;
     gap: 10px;
+
 }
 .icon{
     margin-top: 1%;
     text-align: center;
 }
+
 .icon img{
     height: 7%;
 }
