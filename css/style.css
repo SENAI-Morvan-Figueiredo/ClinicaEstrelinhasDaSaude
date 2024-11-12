@@ -130,3 +130,10 @@ body{
     display: grid;
     gap: 10px;
 }
+.icon{
+    margin-top: 1%;
+    text-align: center;
+}
+.icon img{
+    height: 7%;
+}
