@@ -49,9 +49,95 @@
                     </div>
                 </div>
             </div>
-            <div class="container2">
-                <h1 class="roboto-regular">Olá, Administrador!</h1>
-            </div>
+                <div class="container">
+                    <h1 class="welcome">Olá, Administrador!</h1>
+                    
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-info">
+                                <div class="card-title">Consultas Marcadas</div>
+                                <div class="card-value">101</div>
+                            </div>
+                            <div class="card-icon icon-consultas">👨‍⚕️</div>
+                        </div>
+            
+                        <div class="card">
+                            <div class="card-info">
+                                <div class="card-title">Pacientes Atendidos</div>
+                                <div class="card-value">30</div>
+                            </div>
+                            <div class="card-icon icon-pacientes">🏥</div>
+                        </div>
+            
+                        <div class="card">
+                            <div class="card-info">
+                                <div class="card-title">Consultas Clínicas</div>
+                                <div class="card-value">101</div>
+                            </div>
+                            <div class="card-icon icon-clinicas">❤️</div>
+                        </div>
+            
+                        <div class="card">
+                            <div class="card-info">
+                                <div class="card-title">Faturamento Total</div>
+                                <div class="card-value">$666.66</div>
+                            </div>
+                            <div class="card-icon icon-faturamento">🏦</div>
+                        </div>
+                    </div>
+            
+                    <div class="graficos-container">
+                        <div class="grafico">
+                            <h2 class="grafico-titulo">Consultas Realizadas ao Longo dos Meses</h2>
+                            <canvas id="linhaChart" class="linha-chart"></canvas>
+                        </div>
+                        
+                        <div class="grafico">
+                            <h2 class="grafico-titulo">Distribuição de Consultas</h2>
+                            <canvas id="donutChart" class="donut-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    // Gráfico de Linha
+                    const ctxLinha = document.getElementById('linhaChart').getContext('2d');
+                    new Chart(ctxLinha, {
+                        type: 'line',
+                        data: {
+                            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril'],
+                            datasets: [{
+                                label: 'Consultas',
+                                data: [30, 65, 25, 85],
+                                borderColor: '#4e73df',
+                                tension: 0.3,
+                                fill: false
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false
+                        }
+                    });
+            
+                    // Gráfico de Donut
+                    const ctxDonut = document.getElementById('donutChart').getContext('2d');
+                    new Chart(ctxDonut, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Despesas Gerais', 'Salários', 'Gastos'],
+                            datasets: [{
+                                data: [30, 40, 30],
+                                backgroundColor: ['#4e73df', '#ffa500', '#36b9cc']
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false
+                        }
+                    });
+                </script>
         </div>
     </div>
 </body>
